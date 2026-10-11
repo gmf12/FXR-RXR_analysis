@@ -1,6 +1,30 @@
 # FXR-RXR_analysis
-Allosteric signal transduction in FXR/RXR heterodimers bound to steroidal antagonists
 
-Bile acids (BAs) are key signalling steroidal molecules that regulate glucose, lipid and energy homeostasis via interactions with farnesoid X receptor (FXR) and G-protein bile acid receptor 1 (GPBAR1). The FXR functions as an enterohepatic regulator of bile acid homeostasis, cholesterol, lipid, glucose and amino acid metabolism and inflammation [1,2]. Chenodeoxycholic acid (3α,7α-dihydroxy-5β-cholanic acid, CDCA) is the most potent endogenous FXR ligand [3], while lithocholic acid (3α-hydroxy-5β-cholan-24-oic acid, LCA) and its taurine conjugate, taurolitocholic acid (TLCA), activate the GPBAR1 with the highest potency among natural BAs.
-FXR is a transcription factor from the family of nuclear receptors (NRs). NRs have a conserved folding consisting on an N-terminal DNA-binding domain, which interacts with specific DNA element, connected to the ligand binding domain (LBD). The LBDs is composed by a three-layered α helical sandwich fold, containing 12 α -helices (H1 to H12, Figure 1A-D). The LBD contains a large lipophilic pocket (Ligand Binding Pocket, LBP), which can bind small ligands, triggering the transcriptional switch in the ligand-depended modulation. It also displays the activation function-2 (AF2), a surface (composed by the helices 3, 4, 5 and 12) which can recruit coactivator or corepressor proteins depending on the ligand interacting in the LBP.
+Allosteric signal transduction in FXR/RXR heterodimers bound to steroidal antagonists.
 
+## Background
+
+Bile acids are steroidal signalling molecules that regulate glucose, lipid and energy homeostasis through the farnesoid X receptor (FXR) and the G-protein bile acid receptor 1 (GPBAR1). FXR is a nuclear receptor and a transcription factor: an N-terminal DNA-binding domain is connected to a ligand-binding domain (LBD) made of a three-layered α-helical sandwich (helices H1–H12). The LBD holds a large lipophilic ligand-binding pocket and the activation function-2 (AF2) surface (helices 3, 4, 5 and 12), which recruits coactivators or corepressors depending on the bound ligand.
+
+This repository analyzes how steroidal antagonists change the conformational dynamics and allosteric communication of the FXR/RXR heterodimer.
+
+## Contents
+
+| File | Description |
+|---|---|
+| `MSM_FXR-RXR-gmf.ipynb` | Markov state model (PyEMMA): featurization, clustering, implied timescales, metastable states |
+| `Angle-Vector-domain.ipynb` | Angle between domain vectors along the trajectory (MDAnalysis) |
+| `n5states_state01–05.pdb` | Representative structures of the five metastable states |
+
+## Requirements
+
+Python 3 with Jupyter and the libraries listed below. Trajectories and
+Schrödinger Suite outputs are **not** included in this repository.
+
+```bash
+pip install jupyter numpy matplotlib MDAnalysis pyemma mdtraj nglview mdshare
+```
+
+## Author
+
+**Glaucio Monteiro Ferreira** — Research Associate, Institute of Chemistry, University of São Paulo (IQ-USP) · [LIBNM · Ferreira Lab](https://ferreiralab.com.br) · [ORCID](https://orcid.org/0000-0002-1952-9428) · [FAPESP profile](https://bv.fapesp.br/pt/pesquisador/703612/glaucio-monteiro-ferreira/) · [gmf@usp.br](mailto:gmf@usp.br)
